@@ -1,0 +1,620 @@
+/* define fonts start */
+
+/* samim */
+@font-face {
+  font-family: "samim";
+  src: url("../fonts/Samim/Samim.woff") format("woff"),
+    url("../fonts/Samim/Samim.eot"),
+    url("../fonts/Samim/Samim.ttf") format("truetype");
+}
+
+/* samim */
+@font-face {
+  font-family: "aviny";
+  src: url("../fonts/aviny/aviny-700.woff") format("woff"),
+    url("../fonts/aviny/aviny-700.eot"),
+    url("../fonts/aviny/aviny-700.ttf") format("truetype");
+}
+
+/* iransans */
+@font-face {
+  font-family: "iransans";
+  src: url("../fonts/IRANSansWeb\(FaNum\).e2b0436903df14b8a8c2.woff2")
+    format("woff");
+}
+
+/* yekanbakh */
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Yekan Bakh/Yekan Bakh EN 03 Light.eot?v=970802");
+  src: url("../fonts/Yekan Bakh/Yekan Bakh EN 03 Light.woff?v=970802")
+      format("woff"),
+    url("../fonts/Yekan Bakh/Yekan Bakh EN 03 Light.ttf?v=970802")
+      format("truetype");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Yekan Bakh/Yekan Bakh EN 04 Regular.eot?v=970802");
+  src: url("../fonts/Yekan Bakh/Yekan Bakh EN 04 Regular.woff?v=970802")
+      format("woff"),
+    url("../fonts/Yekan Bakh/Yekan Bakh EN 04 Regular.ttf?v=970802")
+      format("truetype");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Yekan Bakh/Yekan Bakh EN 05 Medium.eot?v=970802");
+  src: url("../fonts/Yekan Bakh/Yekan Bakh EN 05 Medium.woff?v=970802")
+      format("woff"),
+    url("../fonts/Yekan Bakh/Yekan Bakh EN 05 Medium.ttf?v=970802")
+      format("truetype");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Yekan Bakh/Yekan Bakh EN 06 Bold.eot?v=970802");
+  src: url("../fonts/Yekan Bakh/Yekan Bakh EN 06 Bold.woff?v=970802")
+      format("woff"),
+    url("../fonts/Yekan Bakh/Yekan Bakh EN 06 Bold.ttf?v=970802")
+      format("truetype");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Yekan Bakh/Yekan Bakh EN 07 Heavy.eot?v=970802");
+  src: url("../fonts/Yekan Bakh/Yekan Bakh EN 07 Heavy.woff?v=970802")
+      format("woff"),
+    url("../fonts/Yekan Bakh/Yekan Bakh EN 07 Heavy.ttf?v=970802")
+      format("truetype");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/Yekan Bakh/Yekan Bakh EN 08 Fat.eot?v=970802");
+  src: url("../fonts/Yekan Bakh/Yekan Bakh EN 08 Fat.woff?v=970802")
+      format("woff"),
+    url("../fonts/Yekan Bakh/Yekan Bakh EN 08 Fat.ttf?v=970802")
+      format("truetype");
+}
+
+/* iranyekan */
+@font-face {
+  font-family: iranyekan;
+  font-style: bold;
+  font-weight: 700;
+  src: url(../fonts/iranyekan/eot/iranyekanwebboldfanum.eot);
+  src: url(../fonts/iranyekan/woff/iranyekanwebboldfanum.woff) format("woff"),
+    url(../fonts/iranyekan/ttf/iranyekanwebboldfanum.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/iranyekan/eot/iranyekanwebregularfanum.eot);
+  src: url(../fonts/iranyekan/woff/iranyekanwebregularfanum.woff) format("woff"),
+    url(../fonts/iranyekan/ttf/iranyekanwebregularfanum.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: light;
+  font-weight: 300;
+  src: url(../fonts/iranyekan/eot/iranyekanweblightfanum.eot);
+  src: url(../fonts/iranyekan/woff/iranyekanweblightfanum.woff) format("woff"),
+    url(../fonts/iranyekan/ttf/iranyekanweblightfanum.ttf) format("truetype");
+}
+
+/* define fonts end */
+
+/* define dynamic varibales start */
+:root {
+  --body-font: Tahoma;
+  --fa-body-font: var(--body-font-iransans);
+  --body-font-iranyekan: iranyekan;
+  --body-font-yekanbakh: YekanBakh;
+  --body-font-samim: "samim";
+  --body-font-iransans: "iransans";
+  --body-font-aviny: "aviny";
+  --background-color: #ffffff;
+  --text-color: #155e75;
+  --text-hover-color: #276585;
+  --border-color: #ebebeb;
+}
+/* define dynamic varibales end */
+
+
+
+.iranyekan, input {
+  font-family: var(--body-font-iranyekan) !important;
+}
+
+.yekanbakh {
+  font-family: var(--body-font-yekanbakh);
+}
+
+/* css start */
+html {
+  background-color: var(--background-color) !important;
+}
+
+body {
+  font-family: var(--body-font) !important;
+  background-color: var(--background-color) !important;
+  color: var(--text-color);
+}
+
+body:lang(en) {
+  direction: ltr;
+}
+
+body:lang(fa) {
+  direction: rtl;
+  font-family: var(--fa-body-font) !important;
+}
+
+nav a {
+  color: inherit !important;
+  transition: all ease-out 0.3s !important;
+}
+nav a:hover {
+  color: var(--text-hover-color) !important;
+}
+
+nav:lang(fa) a {
+  color: inherit !important;
+  transition: all ease-out 0.3s !important;
+}
+nav:lang(fa) a:hover {
+  color: var(--text-hover-color) !important;
+}
+
+button,
+button:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+
+.section-title:lang(en) {
+  font-weight: 100 !important;
+}
+
+/* width */
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #cbf3ff;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-hover-color);
+}
+
+.fancybox__backdrop {
+  background: #ffffffa2;
+}
+
+.fancybox__caption {
+  color: #155e75;
+}
+
+.fancybox__content>.carousel__button.is-close {
+  color: #155e75;
+}
+
+.dx-tabs-wrapper {
+  display: flex;
+}
+
+.dx-tabs {
+  border: unset;
+  border-block-end: 1px solid rgb(225, 225, 225, 0.4);
+}
+
+.dx-tab {
+  background-color: unset;
+  min-width: 80px !important;
+  
+}
+
+.dx-tab.dx-tab-selected  {
+  color: #155e75 !important;
+  font-weight: bold;
+  background-color: #ecfeff;
+}
+
+.dx-tab-selected::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  right: -1px;
+  left: -1px;
+  border-right: unset;
+  border-left: unset;
+  border-top: none;
+  border-bottom: none;
+  z-index: 1;
+}
+
+.dx-tab.dx-tab-selected .dx-tab-content::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  width: 50%;
+  margin: 0 auto;
+  height: 5px;
+  background-color: #155e75;
+  bottom: 0px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: unset;
+  border-bottom-left-radius: unset;
+}
+
+.dx-tab.dx-state-hover {
+  background-color: #ecfeff;
+}
+
+.dx-tab.dx-state-focused {
+  background-color: #ecfeff;
+}
+
+.dx-tab.dx-state-focused::after {
+  border: none !important;
+}
+
+.dx-tabs-nav-button {
+  background-color: #ecfeff;
+}
+
+.dx-tabs-scrollable .dx-tabs-wrapper {
+  border: unset;
+  border-block-end: 1px solid rgb(225, 225, 225, 0.4);
+  border-block-start: 1px solid rgb(225, 225, 225, 0.4);
+}
+
+.dx-tabpanel > .dx-tabpanel-tabs .dx-tabs {
+  background-color: transparent;
+  border: unset;
+  border-block-end: 1px solid rgb(225, 225, 225, 0.9);
+  -webkit-box-shadow: none !important; 
+  box-shadow: none !important;
+}
+
+.dx-tabpanel > .dx-tabpanel-tabs .dx-tab {
+  -webkit-box-shadow: none !important; 
+  box-shadow: none !important;
+}
+
+.dx-tabpanel > .dx-tabpanel-tabs .dx-tab:hover,
+.dx-tabpanel > .dx-tabpanel-tabs .dx-tab:focus {
+  background-color: rgba(0, 150, 136, 0.08);
+}
+
+.dx-tabpanel .dx-multiview-wrapper {
+  border: none;
+}
+
+.dx-invalid-message {
+  font-family: Yekanbakh;
+}
+
+.dx-toast-message {
+  font-family: Yekanbakh;
+  font-weight: 300 !important;
+  text-align: right;
+  margin-left: auto;
+}
+
+.dx-form-validation-summary {
+  margin-left:  20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+
+.dx-theme-generic-typography {
+  font-family: inherit;
+}
+
+#grid-accounting-list input,
+#grid-accounting-list select {
+  border: none !important;
+}
+
+#grid-accounting-list input:focus,
+#grid-accounting-list select:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.dx-widget {
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.text-grey {
+  color: var(--gray-light);
+}
+
+.font-small {
+  font-size: 8px;
+}
+
+.dx-list-select-all {
+  display: none;
+}
+
+.grid-accounting-list td {
+  vertical-align: middle;
+}
+
+.dx-datagrid-content .dx-datagrid-table .dx-row > td,
+.dx-datagrid-content .dx-datagrid-table .dx-row > tr > td {
+  vertical-align: middle;
+}
+
+.dx-item.dx-list-item {
+  border-top: none;
+}
+
+.bg-grey {
+  background-color: var(--gray-lightest);
+}
+
+.font-large {
+  font-size: 14px;
+}
+
+.dx-popup .dx-toolbar-before *,
+.dx-popup .dx-popup-content {
+  font-family: var(--body-font-iransans);
+}
+
+.sidebar-icon-only .sidebar .nav .nav-item.active > .nav-link {
+  background-color: transparent !important;
+}
+
+.dx-context-menu * {
+  font-family: var(--body-font-iransans);
+  font-size: 10px;
+}
+
+.dx-context-menu i.mdi::before,
+.dx-button-content i.mdi::before {
+    line-height: unset !important;
+}
+
+
+.text-teal {
+  color: #01877e !important;
+}
+
+.alert-teal {
+    background-color: #cfe7e7;
+}
+
+.dx-menu {
+    font-size: 12px;
+}
+
+.dx-texteditor-input,
+.dx-texteditor-input:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.dx-datagrid .dx-header-row * {
+  font-size: 11px !important;
+}
+
+.dx-widget, 
+.dx-widget input, 
+.dx-widget textarea {
+  font-family: var(--body-font-iransans) !important;
+}
+
+.dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused) > td,
+.dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused) > tr > td,
+.dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused):hover > td,
+.dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused):hover > tr > td {
+  background-color: #cfe7e7;
+  color: #333;
+}
+
+.dx-rtl .dx-field-item:not(.dx-first-col) {
+  padding-right: unset !important;
+}
+
+.dx-form-group-caption {
+  
+  font-size: 13px !important;
+}
+
+.dx-form-group-with-caption > .dx-form-group-content {
+  border: none;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.dx-fileuploader-content {
+  display: flex;
+  align-items: center;
+}
+
+.dx-fileuploader-input-container {
+  display: none;
+}
+
+.dx-fileuploader-show-file-list .dx-fileuploader-files-container {
+  padding-top: 0;
+  padding-right: 10px;
+}
+
+#menu {
+  width: 100% !important;
+  overflow-y: hidden !important;
+  overflow-x: scroll !important; 
+  white-space: nowrap !important;
+}
+
+.content-wrapper,
+.main-panel {
+  overflow-x: hidden;
+}
+
+.buttons .dx-button-content{
+  margin-left: 5px !important;
+}
+
+.dx-tabs-wrapper {
+  display: flex;
+}
+
+.dx-tabs {
+  border: unset;
+  border-block-end: 1px solid rgb(225, 225, 225, 0.4);
+}
+
+.dx-tab {
+  background-color: unset;
+  min-width: 80px !important;
+  
+}
+
+.dx-tab.dx-tab-selected  {
+  color: rgb(0, 150, 136) !important;
+  font-weight: bold;
+  background-color: rgba(0, 150, 136, 0.08);
+}
+
+.dx-tab-selected::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  right: -1px;
+  left: -1px;
+  border-right: unset;
+  border-left: unset;
+  border-top: none;
+  border-bottom: none;
+  z-index: 1;
+}
+
+.dx-tab.dx-tab-selected .dx-tab-content::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  width: 50%;
+  margin: 0 auto;
+  height: 5px;
+  background-color: rgb(0, 150, 136);
+  bottom: 0px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: unset;
+  border-bottom-left-radius: unset;
+}
+
+.dx-tab.dx-state-hover {
+  background-color: rgba(0, 150, 136, 0.08);
+}
+
+.dx-tab.dx-state-focused {
+  background-color: rgba(0, 150, 136, 0.08);
+}
+
+.dx-tab.dx-state-focused::after {
+  border: none !important;
+}
+
+.dx-tabs-nav-button {
+  background-color: rgba(0, 150, 136, 0.08);
+}
+
+.dx-tabs-scrollable .dx-tabs-wrapper {
+  border: unset;
+  border-block-end: 1px solid rgb(225, 225, 225, 0.4);
+  border-block-start: 1px solid rgb(225, 225, 225, 0.4);
+}
+
+.dx-tabpanel > .dx-tabpanel-tabs .dx-tabs {
+  background-color: transparent;
+  border: unset;
+  border-block-end: 1px solid rgb(225, 225, 225, 0.9);
+  -webkit-box-shadow: none !important; 
+  box-shadow: none !important;
+}
+
+.dx-tabpanel > .dx-tabpanel-tabs .dx-tab {
+  -webkit-box-shadow: none !important; 
+  box-shadow: none !important;
+}
+
+.dx-tabpanel > .dx-tabpanel-tabs .dx-tab:hover,
+.dx-tabpanel > .dx-tabpanel-tabs .dx-tab:focus {
+  background-color: rgba(0, 150, 136, 0.08);
+}
+
+.dx-tabpanel .dx-multiview-wrapper {
+  border: none;
+}
+
+.dx-invalid-message {
+  font-family: var(--body-font-iransans);
+}
+
+.dx-toast-message {
+  font-family: var(--body-font-iransans);
+  font-weight: 300 !important;
+  text-align: right;
+  margin-left: auto;
+}
+
+.dx-treelist .dx-row, .dx-treelist .dx-header-row,
+.dx-rtl.dx-treelist .dx-column-lines > td  {
+  border: none !important;
+}
+.dx-treelist .dx-cell {
+  border: none !important;
+}
+.dx-treelist .dx-header-row .dx-cell {
+  border: none !important;
+}
+
+.breadcrumb a {
+  color: unset;
+}
+
+.datepicker-plot-area {
+  font: unset;
+}

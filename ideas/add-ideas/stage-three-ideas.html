@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <!-- Required meta tags start -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>ثبت ایده یا استارت شتابدهنده سنجیده</title>
+    <base href="/" />
+    <!-- Required meta tags end -->
+
+    <!-- fav icon page start -->
+    <link rel="shortcut icon" href="assets/images/logo.png" />
+    <!-- End fav icon page -->
+
+    <!-- css Modules start -->
+    <link rel="stylesheet" href="assets/css/dx.light.css" />
+    <link rel="stylesheet" href="assets/vendors/tailwind/tailwind.min.css" />
+    <link rel="stylesheet" href="assets/vendors/tailwind/all.min.css" />
+    <link rel="stylesheet" href="assets/vendors/tailwind/motion-tailwind.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/pdatepicker/persian-datepicker.css"
+    />
+    <!-- css Modules end -->
+
+    <!-- Layout styles start-->
+    <link rel="stylesheet" href="assets/css/dynamic-theme.css" />
+    <!-- layout styles End -->
+  </head>
+  <body
+    class="overflow-x-hidden h-screen m-0 p-0 dx-viewport iranyekan"
+  >
+    <div id="root" class="bg-gray-50 h-full ">
+
+      <div class="container flex flex-col mx-auto rounded-lg py-5 pb-12 bg-gray-50">
+
+        <section class="pt-6 cursor-light breadcrumb" >
+
+          <div class="max-w-screen-2xl mx-auto md:px-6 px-3 relative">
+
+            <div class="w-full justify-between sm:text-lg lg:px-0 ">
+              <ol class="inline-flex items-center gap-x-2 bg-sky-100 text-sky-700 rounded w-full p-3 text-xs md:text-sm">
+                <li class="hidden lg:flex items-center">
+                  <a href="#" class="cursor-pointer hover:text-sky-500">
+                    ثبت اطلاعات کلی
+                  </a>
+                </li>
+                <li class="hidden lg:flex items-center">
+                  <svg class="w-6 h-6 fill-sky-700 ml-2 opacity-30" 
+                          style="transform: rotate(180deg);" fill="currentColor" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.40625 13L6.820313 4.234375C6.4375 3.84375 6.441406 3.21875 6.828125 2.828125L8.363281 1.292969C8.757813 0.902344 9.390625 0.902344 9.78125 1.296875L20.707031 12.292969C20.902344 12.488281 21 12.742188 21 13C21 13.257813 20.902344 13.511719 20.707031 13.707031L9.78125 24.703125C9.390625 25.097656 8.757813 25.097656 8.363281 24.707031L6.828125 23.171875C6.441406 22.78125 6.4375 22.15625 6.820313 21.765625Z"  />
+                  </svg>                  
+                  <a href="#" class="cursor-pointer hover:text-sky-500">
+                    ثبت اطلاعات اعضا
+                  </a>
+                </li>                
+                <li>
+                  <div class="flex items-center ">
+                    <svg class="w-6 h-6 fill-sky-700 ml-2 opacity-30" 
+                            style="transform: rotate(180deg);" fill="currentColor" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.40625 13L6.820313 4.234375C6.4375 3.84375 6.441406 3.21875 6.828125 2.828125L8.363281 1.292969C8.757813 0.902344 9.390625 0.902344 9.78125 1.296875L20.707031 12.292969C20.902344 12.488281 21 12.742188 21 13C21 13.257813 20.902344 13.511719 20.707031 13.707031L9.78125 24.703125C9.390625 25.097656 8.757813 25.097656 8.363281 24.707031L6.828125 23.171875C6.441406 22.78125 6.4375 22.15625 6.820313 21.765625Z"  />
+                    </svg>
+                    <a class="opacity-50">
+                      ثبت جزئیات ایده
+                    </a>
+                  </div>
+                </li>            
+              </ol>
+            </div>  
+
+          </div>
+
+        </section>
+
+        <!-- Start Products Grid block -->
+        <section class="pt-6 cursor-light" >
+          <div class="max-w-screen-2xl mx-auto md:px-6 px-3 relative">
+
+            <div class="fs-title pb-3 text-md lg:text-xl yekanbakh font-bold text-sky-700">
+              ثبت جزئیات ایده
+            </div> 
+
+            
+            <div class="grid gap-2 relative mb-6">
+              <div class="select-Type ">
+                <p class="text-justify mb-6 text-sky-700">
+                  ایده پرداز گرامی اطلاعات درخواستی را جز به جز شرح دهید
+                </p>
+                <form action="">
+                  <div id="form">
+
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Products Grid block --> 
+      </div>
+
+      <!-- Start footer block -->
+      <footer
+        class=" fixed bottom-0 w-screen bg-gray-50"
+        id="footer"
+      >
+        <div class="mx-auto w-full max-w-screen-xl p-4 ">
+          <hr class="border-indigo-600 sm:mx-auto dark:border-gray-700 mb-6 opacity-25" />
+          <div class="sm:flex sm:items-center sm:justify-between" dir="ltr">
+            <span
+              class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+              >© 2024
+              <a href="" class="text-indigo-600 hover:underline">Sanjide</a
+              >. All Rights Reserved.
+            </span>
+            <div class="flex mt-4 sm:justify-center sm:mt-0 gap-x-4">
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              >
+                <img
+                  src="assets/images/icons/whatsapp.png"
+                  class="w-5 h-5"
+                  alt=""
+                />
+                <span class="sr-only">whatsapp page</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              >
+                <img
+                  src="assets/images/icons/telegram.png"
+                  class="w-5 h-5"
+                  alt=""
+                />
+                <span class="sr-only">telegram page</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              >
+                <img
+                  src="assets/images/icons/envelope.png"
+                  class="w-5 h-5"
+                  alt=""
+                />
+                <span class="sr-only">mail page</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              >
+                <img
+                  src="assets/images/icons/telephone.png"
+                  class="w-5 h-5"
+                  alt=""
+                />
+                <span class="sr-only">telephone page</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End footer block -->
+
+    </div>
+
+    <!-- javascript modules start -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/vendors/tailwind/tailwind.min.js"></script>
+    <script src="assets/vendors/flowbite/flowbite.js"></script>
+    <script src="assets/vendors/owl-carousel-2/owl.carousel.min.js"></script>
+    <script src="assets/js/dx.all.js"></script>
+    <script src="assets/vendors/pdatepicker/persian-date.js"></script>
+    <script src="assets/vendors/pdatepicker/persian-datepicker.js"></script>    
+    <script>
+
+      function isNumeric(value) {
+          return /^-?\d+$/.test(value);
+      }
+
+      const categories = [
+        {
+          id: "1",
+          title: "فناوری اطلاعات و تکنولوژی",
+        },
+        {
+          id: "2",
+          title: "تجارت الکترونیک و خرده فروشی",
+        },
+        {
+          id: "3",
+          title: "فینتک و خدمات مالی",
+        },
+        {
+          id: "4",
+          title: "سلامت و فناوری پزشکی",
+        },
+        {
+          id: "5",
+          title: "حمل و نقل و لجستیک",
+        },
+        {
+          id: "6",
+          title: "آموزش و یادگیری",
+        },
+        {
+          id: "7",
+          title: "انرژی و محیط زیست",
+        },
+        {
+          id: "8",
+          title: "رسانه و سرگرمی",
+        },     
+        {
+          id: "9",
+          title: "مسکن و املاک",
+        },
+        {
+          id: "10",
+          title: "غذا و کشاورزی",
+        },
+        {
+          id: "11",
+          title: "گردشگری ",
+        },    
+        {
+          id: "12",
+          title: "سایر ",
+        },                   
+      ];
+
+
+      var documentDataForm= {
+        // Task Parameter
+        introduction: "",
+        problem: "",
+        approach: "",
+        vision: "",
+        marketTarget: "",
+        history: "",
+        finance: "",
+        yourRequest: "",
+
+        requset: "addIdeasInfo",
+        type: "new",
+
+        // Document Data
+        startupId: "1",
+        startUpTitle: "توسعه هوش مصنوعی دانا",
+        ideaCategory : "1"
+
+      }
+
+
+      $(document).ready(function () {
+        var lang = $("html").attr("lang");
+
+        if (lang == "fa") {
+          $(".active-lang").html($(".fa-lang").html());
+        } else {
+          $(".active-lang").html($(".en-lang").html());
+        }
+
+        document.querySelectorAll('nav li a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+              behavior: "smooth",
+            });
+          });
+        });
+      
+        var form = $("#form")
+            .dxForm({
+                labelMode: "floating",
+                formData: documentDataForm,
+                readOnly: false,
+                showColonAfterLabel: false,
+                rtlEnabled: true,
+                labelLocation: "top",
+                showValidationSummary: true,
+                colCount: 1,
+                items: [
+                  {
+                    itemType: 'group',
+                    name: "ideaGroup",
+                    cssClass: 'ideaGroup',
+                    colSpan: 2,   
+                    colCount: 2,
+                    items: [
+                      {
+                      
+                        itemType: 'group',
+                        name: "ideaGroup",
+                        cssClass: 'ideaGroup',
+                        colSpan: 2,   
+                        colCount: 2,
+                        items: [
+                          {
+                            colSpan: 2,                        
+                            dataField: "startUpId",
+                            editorType: "dxTextBox",
+                            editorOptions: {
+
+                              readOnly: true,
+                              visible: false
+                            },
+                            validationRules: [
+                              {
+                                type: "required",
+                                message: "تکمیل عنوان ایده الزامی است!",
+                              },
+                            ],
+                            label: {
+                              text: "شناسه ایده",
+                            },
+                          },                      
+                          {
+                            dataField: "ideaCategory",
+                            editorType: "dxSelectBox",
+                            label: {
+                              text: "زمینه فعالیت",
+                            },
+                            editorOptions: {
+                              valueExpr: "id",
+                              displayExpr: "title",
+                              dataSource: categories,
+                              placeholder: "زمینه فعالیت ایده خود را تعیین کنید",
+                              readOnly: true
+                            },
+                            validationRules: [
+                              {
+                                type: "required",
+                                message: "تعیین زمینه فعالیت ایده الزامی است!",
+                              },
+                            ],
+                          },  
+                          {
+                            dataField: "startUpTitle",
+                            editorType: "dxTextBox",
+                            editorOptions: {
+                              placeholder: "عنوان ایده تکمیل را وارد کنید",
+                              readOnly: true
+                            },
+                            validationRules: [
+                              {
+                                type: "required",
+                                message: "تکمیل عنوان ایده الزامی است!",
+                              },
+                            ],
+                            label: {
+                              text: "عنوان ایده",
+                            },
+                          },                                                                                                                                                
+                        ]
+                      },                                                       
+                      {
+                        dataField: "introduction",
+                        editorType: "dxTextArea",
+                        
+                        editorOptions: {
+                          height: 120,
+                          placeholder: "چکیده ایده خود را وارد کنید",
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تکمیل چکیده ایده الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: "چکیده ایده",
+                        },
+                      },    
+                      {
+                        dataField: "problem",
+                        editorType: "dxTextArea",
+                        
+                        editorOptions: {
+                          height: 120,
+                          placeholder: "بیان مسئله کنید",
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تکمیل بیان مسئله الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: "بیان مسئله",
+                        },
+                      },      
+                      {
+                        dataField: "approach",
+                        editorType: "dxTextArea",
+                      
+                        editorOptions: {
+                          height: 120,
+                          placeholder: "راهکار خلاقانه خود را وارد کنید",
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تکمیل راهکار خلاقانه الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: "راهکار خلاقانه",
+                        },
+                      },    
+                      {
+                        dataField: "vision",
+                        editorType: "dxTextArea",
+                        editorOptions: {
+                          height: 120,
+                          placeholder: "چشم‌انداز و ماموریت خود را وارد کنید",
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تکمیل چشم‌انداز و ماموریت الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: "چشم‌انداز و ماموریت",
+                        },
+                      },   
+                      {
+                        dataField: "marketTarget",
+                        editorType: "dxTextArea",
+                      
+                        editorOptions: {
+                          height: 120,
+                          placeholder: "بازار هدف را وارد کنید",
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تکمیل بازار هدف الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: "بازار هدف",
+                        },
+                      },    
+                      {
+                        dataField: "history",
+                        editorType: "dxTextArea",
+                        editorOptions: {
+                          height: 120,
+                          placeholder: "پیشینه طرح خود را وارد کنید",
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تکمیل پیشینه طرح الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: "پیشینه طرح",
+                        },
+                      },      
+                      {
+                        dataField: "finance",
+                        editorType: "dxTextArea",
+                      
+                        editorOptions: {
+                          height: 120,
+                          placeholder: "برآوردهای مالی خود را وارد کنید",
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تکمیل برآوردهای مالی الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: "برآوردهای مالی طرح",
+                        },
+                      },    
+                      {
+                        dataField: "yourRequest",
+                        editorType: "dxTextArea",
+                        editorOptions: {
+                          height: 120,
+                          placeholder: "خدمات و تسهیلات درخواستی خود را وارد کنید",
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تکمیل خدمات و تهسیلات درخواستی الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: "خدمات و تسهیلات درخواستی",
+                        },
+                      },                                                                                                                                                                                                               
+                    ]
+                  },
+                  {
+                    colSpan: 1,
+                    itemType: "group",
+                    cssClass: "d-flex justify-content-center mx-auto pt-5",
+                    items: [
+                      {
+                        itemType: "button",
+                        name: "accept",
+                        buttonOptions: {
+                          text: "ثبت اطلاعات و رفتن به مرحله بعد",
+                          type: "success",
+                          useSubmitBehavior: true,
+                          width: "250",
+                        },
+                      },                           
+                    ],
+                  },                                                                                                                                                                                                                                                 
+                ]             
+            })
+            .dxForm("instance");
+       
+      });
+    </script>
+    <!-- javascript modules end -->
+  </body>
+</html>

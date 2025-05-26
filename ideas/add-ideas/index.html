@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <!-- Required meta tags start -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>ثبت ایده یا استارت شتابدهنده سنجیده</title>
+    <base href="/" />
+    <!-- Required meta tags end -->
+
+    <!-- fav icon page start -->
+    <link rel="shortcut icon" href="assets/images/logo.png" />
+    <!-- End fav icon page -->
+
+    <!-- css Modules start -->
+    <link rel="stylesheet" href="assets/css/dx.light.css" />
+    <link rel="stylesheet" href="assets/vendors/tailwind/tailwind.min.css" />
+    <link rel="stylesheet" href="assets/vendors/tailwind/all.min.css" />
+    <link rel="stylesheet" href="assets/vendors/tailwind/motion-tailwind.css" />
+    <!-- css Modules end -->
+
+    <!-- Layout styles start-->
+    <link rel="stylesheet" href="assets/css/dynamic-theme.css" />
+    <!-- layout styles End -->
+  </head>
+  <body
+    class="overflow-x-hidden h-screen m-0 p-0 dx-viewport iranyekan"
+  >
+    <div id="root" class="bg-indigo-50 h-full ">
+      <div class="container flex flex-col mx-auto rounded-lg py-5">
+        <div
+          class="flex justify-center w-full h-full my-auto xl:gap-14 lg:justify-normal md:gap-5 draggable"
+        >
+          <div class="flex items-center xl:p-10 md:pt-24 ">
+            <form
+              autocomplete="off"
+              action="ideas/add-ideas/verify.html"
+              method="get"
+              class="flex flex-col w-full h-full pb-6 text-center rounded-3xl"
+            >
+              <img src="../../assets/images/bg/vector.png" class="xl:w-64 md:w-1/2 w-48 mx-auto" alt="">
+              <h2 class="my-3 text-4xl font-extrabold text-indigo-800 yekanbakh ">
+                ثبت ایده/استارت آپ سنجیده
+              </h2>
+
+              <div class="md:w-7/8 w-full mx-auto">
+                <p class="mb-6 text-indigo-800 leading-7 text-start">
+                  برای شروع فرآیند ثبت ایده یا استارت آپ خود، شماره موبایل همراه
+                  خود را وارد نمایید.
+                </p>                
+                <input
+                  id="tel"
+                  type="tel"
+                  name="phone"
+                  pattern="09[0-9]{9}"
+                  inputmode="numeric"
+                  required
+                  placeholder="شماره موبایل همراه خود را وارد کنید"
+                  class="flex items-center w-full px-5 py-4 text-sm font-medium outline-none focus:shadow-xs focus:shadow-indigo-700 mb-3 placeholder:text-grey-700 bg-white text-dark-grey-900 rounded-2xl"
+                />
+
+                <button
+                  class="w-full px-6 py-5 mb-5 text-sm font-bold leading-none text-white transition duration-300 rounded-2xl hover:bg-indigo-600 focus:ring-4 focus:ring-purple-blue-100 bg-indigo-500"
+                >
+                  ارسال کد تایید
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Start footer block -->
+      <footer
+        class=" fixed bottom-0 w-screen"
+        id="footer"
+      >
+        <div class="mx-auto w-full max-w-screen-xl p-4 ">
+          <hr class="border-indigo-600 sm:mx-auto dark:border-gray-700 mb-6 opacity-25" />
+          <div class="sm:flex sm:items-center sm:justify-between" dir="ltr">
+            <span
+              class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+              >© 2024
+              <a href="" class="text-indigo-600 hover:underline">Sanjide</a
+              >. All Rights Reserved.
+            </span>
+            <div class="flex mt-4 sm:justify-center sm:mt-0 gap-x-4">
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              >
+                <img
+                  src="assets/images/icons/whatsapp.png"
+                  class="w-5 h-5"
+                  alt=""
+                />
+                <span class="sr-only">whatsapp page</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              >
+                <img
+                  src="assets/images/icons/telegram.png"
+                  class="w-5 h-5"
+                  alt=""
+                />
+                <span class="sr-only">telegram page</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              >
+                <img
+                  src="assets/images/icons/envelope.png"
+                  class="w-5 h-5"
+                  alt=""
+                />
+                <span class="sr-only">mail page</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              >
+                <img
+                  src="assets/images/icons/telephone.png"
+                  class="w-5 h-5"
+                  alt=""
+                />
+                <span class="sr-only">telephone page</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End footer block -->
+    </div>
+
+    <!-- javascript modules start -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/vendors/tailwind/tailwind.min.js"></script>
+    <script src="assets/vendors/flowbite/flowbite.js"></script>
+    <script src="assets/vendors/owl-carousel-2/owl.carousel.min.js"></script>
+    <script src="assets/js/dx.all.js"></script>
+    <script>
+      $(document).ready(function () {
+        var lang = $("html").attr("lang");
+
+        if (lang == "fa") {
+          $(".active-lang").html($(".fa-lang").html());
+        } else {
+          $(".active-lang").html($(".en-lang").html());
+        }
+
+        document.querySelectorAll('nav li a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+              behavior: "smooth",
+            });
+          });
+        });
+      });
+    </script>
+    <!-- javascript modules end -->
+  </body>
+</html>
