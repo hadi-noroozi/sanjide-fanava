@@ -175,7 +175,12 @@
     <script src="assets/vendors/owl-carousel-2/owl.carousel.min.js"></script>
     <script src="assets/js/dx.all.js"></script>
     <script src="assets/vendors/pdatepicker/persian-date.js"></script>
-    <script src="assets/vendors/pdatepicker/persian-datepicker.js"></script>    
+    <script src="assets/vendors/pdatepicker/persian-datepicker.js"></script>  
+    <style>
+      .dx-field-item-label.dx-field-item-label-location-top {
+        margin: 8px 0;
+      }
+    </style>  
     <script>
 
       function isNumeric(value) {
@@ -238,12 +243,24 @@
         // Task Parameter
         introduction: "",
         problem: "",
-        approach: "",
+        competitors: "",
         vision: "",
         marketTarget: "",
-        history: "",
+        diffrence: "",
         finance: "",
         yourRequest: "",
+
+        workType: "",
+        scienceBaseType: "",
+        technologyLifecycle: "",
+        marketLifecycle: "",
+        innovationLevel: "",
+        technologyLevel: "",
+        jobCreation: "",
+        preventingCurrencyOutflow: "",
+        marketStatus: "",
+        technologyVacuum: "",
+        certificates: [],
 
         requset: "addIdeasInfo",
         type: "new",
@@ -268,7 +285,6 @@
         document.querySelectorAll('nav li a[href^="#"]').forEach((anchor) => {
           anchor.addEventListener("click", function (e) {
             e.preventDefault();
-
             document.querySelector(this.getAttribute("href")).scrollIntoView({
               behavior: "smooth",
             });
@@ -358,23 +374,350 @@
                             },
                           },                                                                                                                                                
                         ]
-                      },                                                       
+                      },
+                      {
+                        dataField: "workType",
+                        editorType: "dxRadioGroup",
+                        colSpan: 1,
+                        editorOptions: {
+                          dataSource: [
+                            {
+                              id:1,
+                              title: "خدمت / کسب و کار"
+                            }, {
+                              id: 2,
+                              title: "محصول"
+                            }
+                          ],
+                          valueExpr: "id",
+                          displayExpr: "title",
+                          layout: "horizontal",
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تعیین نوع طرح الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: "نوع طرح را تعیین کنید",
+                          
+                        },
+                      }, 
+                      {
+                        dataField: "scienceBaseType",
+                        editorType: "dxRadioGroup",
+                        colSpan: 1,
+                        editorOptions: {
+                          dataSource: [
+                            {
+                              id:1,
+                              title: "شرکت / محصول دانش بنیان است"
+                            }, {
+                              id: 2,
+                              title: "دانش بنیان نیست"
+                            }
+                          ],
+                          valueExpr: "id",
+                          displayExpr: "title",
+                          layout: "horizontal",
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تعیین وضعیت دانش‌بنیان الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: "وضعیت دانش‌بنیان را تعیین کنید",
+                          
+                        },
+                      }, 
+                      {
+                        dataField: "technologyLifecycle",
+                        editorType: "dxRadioGroup",
+                        colSpan: 1,
+                        editorOptions: {
+                          dataSource: [
+                            {
+                              id:1,
+                              title: "ایده اولیه"
+                            }, {
+                              id: 2,
+                              title: "مطالعاتی"
+                            }, {
+                              id:3,
+                              title: "محصول اولیه (MVP)"
+                            }, {
+                              id: 4,
+                              title: "فروش نمونه"
+                            }, {
+                              id: 5,
+                              title: "فروش انبوه"
+                            }, 
+                          ],
+                          valueExpr: "id",
+                          displayExpr: "title",
+                          layout: "horizontal",
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تعیین چرخه عمر فناوری الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: "چرخه عمر فناوری را تعیین کنید",
+                          
+                        },
+                      }, 
+                      {
+                        dataField: "marketLifecycle",
+                        editorType: "dxRadioGroup",
+                        colSpan: 1,
+                        editorOptions: {
+                          dataSource: [
+                            {
+                              id:1,
+                              title: "ورود به بازار"
+                            }, {
+                              id: 2,
+                              title: "بلوغ"
+                            }, {
+                              id:3,
+                              title: "رشد"
+                            }, {
+                              id: 4,
+                              title: "کاهش"
+                            },
+                          ],
+                          valueExpr: "id",
+                          displayExpr: "title",
+                          layout: "horizontal",
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تعیین چرخه عمر محصول در بازار الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: " چرخه عمر محصول در بازار را تعیین کنید",
+                          
+                        },
+                      }, 
+                      {
+                        dataField: "innovationLevel",
+                        editorType: "dxRadioGroup",
+                        colSpan: 1,
+                        editorOptions: {
+                          dataSource: [
+                            {
+                              id:1,
+                              title: "اختراع"
+                            }, {
+                              id: 2,
+                              title: "بست"
+                            }, {
+                              id:3,
+                              title: "سنتز"
+                            }, {
+                              id: 4,
+                              title: "همانندسازی"
+                            }, {
+                              id: 5,
+                              title: "ندارد"
+                            },
+                          ],
+                          valueExpr: "id",
+                          displayExpr: "title",
+                          layout: "horizontal",
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تعیین سطح نوآوری الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: "سطح نوآوری را تعیین کنید",
+                          
+                        },
+                      }, 
+                      {
+                        dataField: "technologyLevel",
+                        editorType: "dxRadioGroup",
+                        colSpan: 1,
+                        editorOptions: {
+                          dataSource: [
+                            {
+                              id:1,
+                              title: "Low-Tech"
+                            }, {
+                              id: 2,
+                              title: "High-Tech"
+                            }
+                          ],
+                          valueExpr: "id",
+                          displayExpr: "title",
+                          layout: "horizontal",
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تعیین سطح فناوری الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: "سطح فناوری را تعیین کنید",
+                          
+                        },
+                      }, 
+                      {
+                        dataField: "jobCreation",
+                        editorType: "dxRadioGroup",
+                        colSpan: 1,
+                        editorOptions: {
+                          dataSource: [
+                            {
+                              id:1,
+                              title: "دارد"
+                            }, {
+                              id: 2,
+                              title: "ندارد"
+                            }
+                          ],
+                          valueExpr: "id",
+                          displayExpr: "title",
+                          layout: "horizontal",
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تعیین امکان اشتغال‌زایی الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: "امکان اشتغال‌زایی را تعیین کنید",
+                          
+                        },
+                      }, 
+                      {
+                        dataField: "preventingCurrencyOutflow",
+                        editorType: "dxRadioGroup",
+                        colSpan: 1,
+                        editorOptions: {
+                          dataSource: [
+                            {
+                              id:1,
+                              title: "دارد"
+                            }, {
+                              id: 2,
+                              title: "ندارد"
+                            }
+                          ],
+                          valueExpr: "id",
+                          displayExpr: "title",
+                          layout: "horizontal",
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تعیین وضعیت جلوگیری از خروج ارز الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: "وضعیت جلوگیری از خروج ارز را تعیین کنید",
+                          
+                        },
+                      }, 
+                      {
+                        dataField: "marketStatus",
+                        editorType: "dxRadioGroup",
+                        colSpan: 1,
+                        editorOptions: {
+                          dataSource: [
+                            {
+                              id:1,
+                              title: "بالفعل داخلی"
+                            }, {
+                              id: 2,
+                              title: "بالقوه داخلی"
+                            }, {
+                              id:3,
+                              title: "بالفعل خارجی"
+                            }, {
+                              id: 4,
+                              title: "بالقوه خارجی"
+                            }, {
+                              id: 5,
+                              title: "ندارد"
+                            },
+                          ],
+                          valueExpr: "id",
+                          displayExpr: "title",
+                          layout: "horizontal",
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تعیین وضعیت وجود بازار الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: "وضعیت وجود بازار را تعیین کنید",
+                          
+                        },
+                      },                                                                                                                                                                                                       
+                      {
+                        dataField: "technologyVacuum",
+                        editorType: "dxRadioGroup",
+                        colSpan: 1,
+                        editorOptions: {
+                          dataSource: [
+                            {
+                              id:1,
+                              title: "کمک به تکمیل خلأ فناوری کشور"
+                            }, {
+                              id: 2,
+                              title: "کمک به ایجاد زنجیره ارزش"
+                            }, {
+                              id: 3,
+                              title: "ندارد"
+                            }
+                          ],
+                          valueExpr: "id",
+                          displayExpr: "title",
+                          layout: "horizontal",
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تعیین وضعیت خلأ فناوری الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: "خلأ فناوری را تعیین کنید",
+                          
+                        },
+                      },                       
+
                       {
                         dataField: "introduction",
                         editorType: "dxTextArea",
                         
                         editorOptions: {
                           height: 120,
-                          placeholder: "چکیده ایده خود را وارد کنید",
+                          placeholder: "خلاصه طرح خود را وارد کنید",
                         },
                         validationRules: [
                           {
                             type: "required",
-                            message: "تکمیل چکیده ایده الزامی است!",
+                            message: "تکمیل خلاصه طرح الزامی است!",
                           },
                         ],
                         label: {
-                          text: "چکیده ایده",
+                          text: "خلاصه طرح",
                         },
                       },    
                       {
@@ -394,25 +737,7 @@
                         label: {
                           text: "بیان مسئله",
                         },
-                      },      
-                      {
-                        dataField: "approach",
-                        editorType: "dxTextArea",
-                      
-                        editorOptions: {
-                          height: 120,
-                          placeholder: "راهکار خلاقانه خود را وارد کنید",
-                        },
-                        validationRules: [
-                          {
-                            type: "required",
-                            message: "تکمیل راهکار خلاقانه الزامی است!",
-                          },
-                        ],
-                        label: {
-                          text: "راهکار خلاقانه",
-                        },
-                      },    
+                      },        
                       {
                         dataField: "vision",
                         editorType: "dxTextArea",
@@ -447,22 +772,40 @@
                         label: {
                           text: "بازار هدف",
                         },
-                      },    
+                      }, 
                       {
-                        dataField: "history",
+                        dataField: "competitors",
                         editorType: "dxTextArea",
+                      
                         editorOptions: {
                           height: 120,
-                          placeholder: "پیشینه طرح خود را وارد کنید",
+                          placeholder: "تحلیل رقبا خود را وارد کنید",
                         },
                         validationRules: [
                           {
                             type: "required",
-                            message: "تکمیل پیشینه طرح الزامی است!",
+                            message: "تکمیل تحلیل رقبا الزامی است!",
                           },
                         ],
                         label: {
-                          text: "پیشینه طرح",
+                          text: "تحلیل رقبا",
+                        },
+                      },                           
+                      {
+                        dataField: "diffrence",
+                        editorType: "dxTextArea",
+                        editorOptions: {
+                          height: 120,
+                          placeholder: ",وجه تمایز خود با سایر رقبا را وارد کنید",
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تکمیل وجه تمایز با سایر رقبا الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: "وجه تمایز با سایر رقبا",
                         },
                       },      
                       {

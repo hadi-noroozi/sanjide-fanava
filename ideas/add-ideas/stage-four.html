@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <!-- Required meta tags start -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>ثبت ایده یا استارت شتابدهنده سنجیده</title>
+    <base href="/" />
+    <!-- Required meta tags end -->
+
+    <!-- fav icon page start -->
+    <link rel="shortcut icon" href="assets/images/logo.png" />
+    <!-- End fav icon page -->
+
+    <!-- css Modules start -->
+    <link rel="stylesheet" href="assets/css/dx.light.css" />
+    <link rel="stylesheet" href="assets/vendors/tailwind/tailwind.min.css" />
+    <link rel="stylesheet" href="assets/vendors/tailwind/all.min.css" />
+    <link rel="stylesheet" href="assets/vendors/tailwind/motion-tailwind.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/pdatepicker/persian-datepicker.css"
+    />
+    <!-- css Modules end -->
+
+    <!-- Layout styles start-->
+    <link rel="stylesheet" href="assets/css/dynamic-theme.css" />
+    <!-- layout styles End -->
+  </head>
+  <body
+    class="overflow-x-hidden h-screen m-0 p-0 dx-viewport iranyekan"
+  >
+    <div id="root" class="bg-gray-50 h-full ">
+
+      <div class="container flex flex-col mx-auto rounded-lg py-5">
+
+        <section class="pt-6 cursor-light breadcrumb" >
+
+          <div class="max-w-screen-2xl mx-auto md:px-6 px-3 relative">
+
+            <div class="w-full justify-between sm:text-lg lg:px-0 ">
+              <ol class="inline-flex items-center gap-x-2 bg-sky-100 text-sky-700 rounded w-full p-3 text-xs md:text-sm">
+                <li class="hidden lg:flex items-center">
+                  <a href="#" class="cursor-pointer hover:text-sky-500">
+                    ثبت اطلاعات کلی
+                  </a>
+                </li>
+                <li class="hidden lg:flex items-center">
+                  <svg class="w-6 h-6 fill-sky-700 ml-2 opacity-30" 
+                          style="transform: rotate(180deg);" fill="currentColor" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.40625 13L6.820313 4.234375C6.4375 3.84375 6.441406 3.21875 6.828125 2.828125L8.363281 1.292969C8.757813 0.902344 9.390625 0.902344 9.78125 1.296875L20.707031 12.292969C20.902344 12.488281 21 12.742188 21 13C21 13.257813 20.902344 13.511719 20.707031 13.707031L9.78125 24.703125C9.390625 25.097656 8.757813 25.097656 8.363281 24.707031L6.828125 23.171875C6.441406 22.78125 6.4375 22.15625 6.820313 21.765625Z"  />
+                  </svg>                  
+                  <a href="#" class="cursor-pointer hover:text-sky-500">
+                    ثبت اطلاعات اعضا
+                  </a>
+                </li>    
+                <li class="hidden lg:flex items-center">
+                  <svg class="w-6 h-6 fill-sky-700 ml-2 opacity-30" 
+                          style="transform: rotate(180deg);" fill="currentColor" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.40625 13L6.820313 4.234375C6.4375 3.84375 6.441406 3.21875 6.828125 2.828125L8.363281 1.292969C8.757813 0.902344 9.390625 0.902344 9.78125 1.296875L20.707031 12.292969C20.902344 12.488281 21 12.742188 21 13C21 13.257813 20.902344 13.511719 20.707031 13.707031L9.78125 24.703125C9.390625 25.097656 8.757813 25.097656 8.363281 24.707031L6.828125 23.171875C6.441406 22.78125 6.4375 22.15625 6.820313 21.765625Z"  />
+                  </svg>                  
+                  <a href="#" class="cursor-pointer hover:text-sky-500">
+                    ثبت جزئیات کسب و کار
+                  </a>
+                </li>                            
+                <li>
+                  <div class="flex items-center ">
+                    <svg class="w-6 h-6 fill-sky-700 ml-2 opacity-30" 
+                            style="transform: rotate(180deg);" fill="currentColor" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.40625 13L6.820313 4.234375C6.4375 3.84375 6.441406 3.21875 6.828125 2.828125L8.363281 1.292969C8.757813 0.902344 9.390625 0.902344 9.78125 1.296875L20.707031 12.292969C20.902344 12.488281 21 12.742188 21 13C21 13.257813 20.902344 13.511719 20.707031 13.707031L9.78125 24.703125C9.390625 25.097656 8.757813 25.097656 8.363281 24.707031L6.828125 23.171875C6.441406 22.78125 6.4375 22.15625 6.820313 21.765625Z"  />
+                    </svg>
+                    <a class="opacity-50">
+                      ثبت مشخصات متقاضی
+                    </a>
+                  </div>
+                </li>            
+              </ol>
+            </div>  
+
+          </div>
+
+        </section>
+
+        <!-- Start Products Grid block -->
+        <section class="pt-6 cursor-light" >
+          <div class="max-w-screen-2xl mx-auto md:px-6 px-3 relative">
+
+            <div class="fs-title pb-3 text-md lg:text-xl yekanbakh font-bold text-sky-700">
+              ثبت مشخصات متقاضی
+            </div> 
+
+            
+            <div class="grid gap-2 relative mb-6">
+              <div class="select-Type ">
+                <p class="text-justify mb-6 text-sky-700">
+                  لطفا مشخصات متقاضی اصلی را جهت برقراری ارتباط  تکمیل نمایید.
+                </p>
+                <form action="">
+                  <div id="form">
+
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Products Grid block --> 
+      </div>
+
+      <!-- Start footer block -->
+      <footer
+        class=" fixed bottom-0 w-screen"
+        id="footer"
+      >
+        <div class="mx-auto w-full max-w-screen-xl p-4 ">
+          <hr class="border-indigo-600 sm:mx-auto dark:border-gray-700 mb-6 opacity-25" />
+          <div class="sm:flex sm:items-center sm:justify-between" dir="ltr">
+            <span
+              class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+              >© 2024
+              <a href="" class="text-indigo-600 hover:underline">Sanjide</a
+              >. All Rights Reserved.
+            </span>
+            <div class="flex mt-4 sm:justify-center sm:mt-0 gap-x-4">
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              >
+                <img
+                  src="assets/images/icons/whatsapp.png"
+                  class="w-5 h-5"
+                  alt=""
+                />
+                <span class="sr-only">whatsapp page</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              >
+                <img
+                  src="assets/images/icons/telegram.png"
+                  class="w-5 h-5"
+                  alt=""
+                />
+                <span class="sr-only">telegram page</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              >
+                <img
+                  src="assets/images/icons/envelope.png"
+                  class="w-5 h-5"
+                  alt=""
+                />
+                <span class="sr-only">mail page</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              >
+                <img
+                  src="assets/images/icons/telephone.png"
+                  class="w-5 h-5"
+                  alt=""
+                />
+                <span class="sr-only">telephone page</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End footer block -->
+
+    </div>
+
+    <!-- javascript modules start -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/vendors/tailwind/tailwind.min.js"></script>
+    <script src="assets/vendors/flowbite/flowbite.js"></script>
+    <script src="assets/vendors/owl-carousel-2/owl.carousel.min.js"></script>
+    <script src="assets/js/dx.all.js"></script>
+    <script src="assets/vendors/pdatepicker/persian-date.js"></script>
+    <script src="assets/vendors/pdatepicker/persian-datepicker.js"></script>    
+    <script>
+
+      function isNumeric(value) {
+          return /^-?\d+$/.test(value);
+      }
+
+      const userTypes = [
+        {
+          id:1,
+          title: "شخصیت حقیقی",
+          description: "اشخاص یا استارت آپ های ثبت نشده"
+        },
+        {
+          id:2,
+          title: "شخصیت حقوقی",
+          description: "شرکت ها و استارت آپ هایی که ثبت شده"
+        },
+      ]
+
+      const categories = [
+        {
+          id: "1",
+          title: "فناوری اطلاعات و تکنولوژی",
+        },
+        {
+          id: "2",
+          title: "تجارت الکترونیک و خرده فروشی",
+        },
+        {
+          id: "3",
+          title: "فینتک و خدمات مالی",
+        },
+        {
+          id: "4",
+          title: "سلامت و فناوری پزشکی",
+        },
+        {
+          id: "5",
+          title: "حمل و نقل و لجستیک",
+        },
+        {
+          id: "6",
+          title: "آموزش و یادگیری",
+        },
+        {
+          id: "7",
+          title: "انرژی و محیط زیست",
+        },
+        {
+          id: "8",
+          title: "رسانه و سرگرمی",
+        },     
+        {
+          id: "9",
+          title: "مسکن و املاک",
+        },
+        {
+          id: "10",
+          title: "غذا و کشاورزی",
+        },
+        {
+          id: "11",
+          title: "گردشگری ",
+        },    
+        {
+          id: "12",
+          title: "سایر ",
+        },                   
+      ];
+
+      var documentDataForm= {
+        // Task Parameters
+        userType: "",
+
+        fullname: "",
+        birthday: "",
+        profisency: "",
+        university: "",
+        phone: "",
+        email: "",
+
+        company: "",
+        issueNumber: "",
+        issueDate: "",
+        companyType: "",
+        identityId: "",
+        CEOName: "",
+        address: "",
+        assets: "",
+
+        requset: "userInfo",
+        type: "new",
+
+        // Document Data
+        startupId: "1",
+        startUpTitle: "توسعه هوش مصنوعی دانا",
+        ideaCategory : "1"
+
+      }
+
+
+      $(document).ready(function () {
+        var lang = $("html").attr("lang");
+
+        if (lang == "fa") {
+          $(".active-lang").html($(".fa-lang").html());
+        } else {
+          $(".active-lang").html($(".en-lang").html());
+        }
+
+        document.querySelectorAll('nav li a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+              behavior: "smooth",
+            });
+          });
+        });
+      
+        var form = $("#form")
+            .dxForm({
+                labelMode: "floating",
+                formData: documentDataForm,
+                readOnly: false,
+                showColonAfterLabel: false,
+                rtlEnabled: true,
+                labelLocation: "top",
+                showValidationSummary: true,
+                colCount: 1,
+                items: [
+                  {
+                  
+                    itemType: 'group',
+                    name: "ideaGroup",
+                    cssClass: '',
+                    colSpan: 2,   
+                    colCount: 2,
+                    items: [
+                      {
+                        colSpan: 2,                        
+                        dataField: "startupId",
+                        editorType: "dxTextBox",
+                        editorOptions: {
+
+                          readOnly: true,
+                          visible: false
+                        },
+                        label: {
+                          text: "شناسه ایده",
+                        },
+                      },                      
+                      {
+                        dataField: "ideaCategory",
+                        editorType: "dxSelectBox",
+                        label: {
+                          text: "زمینه فعالیت",
+                        },
+                        editorOptions: {
+                          valueExpr: "id",
+                          displayExpr: "title",
+                          dataSource: categories,
+                          placeholder: "زمینه فعالیت ایده خود را تعیین کنید",
+                          readOnly: true
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تعیین زمینه فعالیت ایده الزامی است!",
+                          },
+                        ],
+                      },  
+                      {
+                        dataField: "startUpTitle",
+                        editorType: "dxTextBox",
+                        editorOptions: {
+                          placeholder: "عنوان ایده تکمیل را وارد کنید",
+                          readOnly: true
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تکمیل عنوان ایده الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: "عنوان ایده",
+                        },
+                      },                                                                                                                                                
+                    ]
+                  },                   
+                  {
+                    itemType: "group",
+                    cssClass: "mx-auto",
+                    colSpan: 1,   
+                    colCount: 1,
+                    items: [
+                      {
+                        dataField: "startupTypes",
+                        editorType: "dxRadioGroup",
+                        colSpan: 1,
+                        editorOptions: {
+                          dataSource: userTypes,
+                          valueExpr: "id",
+                          displayExpr: "title",
+                          itemTemplate: function(itemData) {
+                              return `<div class="custom-radio border-2 rounded-lg p-3 mb-3 w-[75vw] md:w-[250px] relative"
+                                        data-id="${itemData.id}">
+                                          ${
+                                            itemData.id == 1 ? 
+                                            `
+                                              <svg viewBox="0 0 24 24" class="absolute h-full py-2 top-0 left-1 z-0 fill-sky-700 opacity-40 drop-shadow hidden">
+                                                <path xmlns="http://www.w3.org/2000/svg" d="M12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2 z M 12 4C16.418 4 20 7.582 20 12C20 13.597292 19.525404 15.081108 18.71875 16.330078L17.949219 15.734375C16.397219 14.537375 13.537 14 12 14C10.463 14 7.6017813 14.537375 6.0507812 15.734375L5.28125 16.332031C4.4740429 15.082774 4 13.597888 4 12C4 7.582 7.582 4 12 4 z M 12 5.75C10.208 5.75 8.75 7.208 8.75 9C8.75 10.792 10.208 12.25 12 12.25C13.792 12.25 15.25 10.792 15.25 9C15.25 7.208 13.792 5.75 12 5.75 z M 12 7.75C12.689 7.75 13.25 8.311 13.25 9C13.25 9.689 12.689 10.25 12 10.25C11.311 10.25 10.75 9.689 10.75 9C10.75 8.311 11.311 7.75 12 7.75 z M 12 16C15.100714 16 16.768095 17.168477 17.548828 17.753906C16.109984 19.141834 14.156852 20 12 20C9.843148 20 7.8900164 19.141834 6.4511719 17.753906C7.231905 17.168477 8.899286 16 12 16 z M 6.0546875 17.339844C6.1756559 17.473131 6.297271 17.605851 6.4257812 17.730469C6.2971141 17.605286 6.1747276 17.473381 6.0546875 17.339844 z M 17.912109 17.375C17.802435 17.495543 17.692936 17.616825 17.576172 17.730469C17.692621 17.617521 17.801457 17.494978 17.912109 17.375 z"/>
+                                              </svg>
+                                            ` :
+                                            `
+                                              <svg viewBox="0 0 24 24" class="absolute h-full py-2 top-0 left-1 z-0 fill-sky-700 opacity-40 drop-shadow hidden">
+                                                <path xmlns="http://www.w3.org/2000/svg" d="M4 3C2.9069372 3 2 3.9069372 2 5L2 21L16 21L22 21L22 9C22 7.9069372 21.093063 7 20 7L16 7L16 5C16 3.9069372 15.093063 3 14 3L4 3 z M 4 5L14 5L14 19L4 19L4 5 z M 6 7L6 9L8 9L8 7L6 7 z M 10 7L10 9L12 9L12 7L10 7 z M 16 9L20 9L20 19L16 19L16 17L18 17L18 15L16 15L16 13L18 13L18 11L16 11L16 9 z M 6 11L6 13L8 13L8 11L6 11 z M 10 11L10 13L12 13L12 11L10 11 z M 6 15L6 17L8 17L8 15L6 15 z M 10 15L10 17L12 17L12 15L10 15 z"/>
+                                              </svg>                                            
+                                            `
+                                          }
+
+                                          <strong class="">${itemData.title}</strong>
+                                          <p>${itemData.description}</p>
+                                      </div>`;
+                          },
+                          layout: "horizontal",
+                          onValueChanged(data) {
+                            
+                            //form.option("startupTypes", data.value);
+                            $(".custom-radio").removeClass("border-sky-100 bg-sky-100 text-sky-700");
+                            $(`.custom-radio[data-id="${data.value}"]`).addClass("border-sky-100 bg-sky-100 text-sky-700");
+                            $(".custom-radio").find("svg").addClass("hidden");
+                            $(`.custom-radio[data-id="${data.value}"]`).find("svg").removeClass("hidden");
+                            $(".ideaGroup , .startupGroup").addClass("hidden");
+                            if(data.value==1) {                         
+                    
+                              form.getEditor("fullname").option("disabled", !data.value==1);
+                              form.getEditor("birthday").option("disabled", !data.value==1);
+                              form.getEditor("profisency").option("disabled", !data.value==1);
+                              form.getEditor("university").option("disabled", !data.value==1);
+                              form.getEditor("phone").option("disabled", !data.value==1);
+                              form.getEditor("email").option("disabled", !data.value==1);                              
+
+                              form.getEditor("company").option("disabled", data.value==1);
+                              form.getEditor("issueNumber").option("disabled", data.value==1);
+                              form.getEditor("issueDate").option("disabled", data.value==1);
+                              form.getEditor("companyType").option("disabled", data.value==1);
+                              form.getEditor("identityId").option("disabled", data.value==1);
+                              form.getEditor("CEOName").option("disabled", data.value==1);
+                              form.getEditor("address").option("disabled", data.value==1);
+                              form.getEditor("assets").option("disabled", data.value==1);                              
+
+                              $(".ideaGroup").removeClass("hidden");
+
+                              var date = $("#dateBtn").pDatepicker({
+                                observer: true,
+                                initialValue: false,
+                                autoClose: true,
+                                format: "YYYY/MM/DD",
+                                altField: ".observer-example-alt",
+                                viewMode: "year",
+                                calendarType: "persian",
+                                calendar: {
+                                  persian: {
+                                    locale: "fa",
+                                    showHint: true,
+                                    leapYearMode: "algorithmic",
+                                  },
+                                  gregorian: {
+                                    show: false,
+                                    locale: "fa",
+                                    showHint: false,
+                                  },
+                                },
+                                onSelect: function (e) {
+                                  const dd = date.getState().selected;
+                                  documentDataForm.birthday = `${dd.year}/${dd.month}/${dd.date}`;
+                                  form.updateData("birthday", documentDataForm.birthday);
+                                },
+                              });   
+
+                            } else if(data.value==2) {
+                              $(".ideaGroup").addClass("hidden");
+                              $(".startupGroup").removeClass("hidden");
+
+                              form.getEditor("fullname").option("disabled", data.value==2);
+                              form.getEditor("birthday").option("disabled", data.value==2);
+                              form.getEditor("profisency").option("disabled", data.value==2);
+                              form.getEditor("university").option("disabled", data.value==2);
+                              form.getEditor("phone").option("disabled", data.value==2);
+                              form.getEditor("email").option("disabled", data.value==2);                              
+
+                              form.getEditor("company").option("disabled", !data.value==2);
+                              form.getEditor("issueNumber").option("disabled", !data.value==2);
+                              form.getEditor("issueDate").option("disabled", !data.value==2);
+                              form.getEditor("companyType").option("disabled", !data.value==2);
+                              form.getEditor("identityId").option("disabled", !data.value==2);
+                              form.getEditor("CEOName").option("disabled", !data.value==2);
+                              form.getEditor("address").option("disabled", !data.value==2);
+                              form.getEditor("assets").option("disabled", !data.value==2);    
+
+                              var date = $("#dateBtn2").pDatepicker({
+                                observer: true,
+                                initialValue: false,
+                                autoClose: true,
+                                format: "YYYY/MM/DD",
+                                altField: ".observer-example-alt",
+                                viewMode: "year",
+                                calendarType: "persian",
+                                calendar: {
+                                  persian: {
+                                    locale: "fa",
+                                    showHint: true,
+                                    leapYearMode: "algorithmic",
+                                  },
+                                  gregorian: {
+                                    show: false,
+                                    locale: "fa",
+                                    showHint: false,
+                                  },
+                                },
+                                onSelect: function (e) {
+                                  const dd = date.getState().selected;
+                                  documentDataForm.issueDate = `${dd.year}/${dd.month}/${dd.date}`;
+                                  form.updateData("issueDate", documentDataForm.issueDate);
+                                },
+                              });   
+                            }
+
+                            form.getEditor("accept").option("disabled", false);
+                          },
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تعیین نوع وظیفه الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: " ",
+                          visible:false
+                        },
+                      },
+                    ]
+                  },
+                  {
+                  
+                    itemType: 'group',
+                    name: "ideaGroup",
+                    cssClass: 'ideaGroup hidden',
+                    colSpan: 2,   
+                    colCount: 2,
+                    items: [                   
+                      {
+                        dataField: "fullname",
+                        editorType: "dxTextBox",
+                        editorOptions: {
+                          placeholder: "نام نام خانوادگی متقاضی را وارد کنید",
+                          disabled: true
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تکمیل نام و نام خانوادگی متقاضی الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: "نام و نام خانوادگی متقاضی",
+                        },
+                      },  
+                      {
+                        dataField: 'birthday',
+                        editorType: 'dxTextBox',
+                        label: {
+                          text: 'تاریخ تولد متقاضی',
+                        },
+                        editorOptions: {
+                          disabled: true,
+                          placeholder: 'تاریخ تولد متقاضی را تعیین کنید',
+                          elementAttr: {
+                            id: "dateInput",
+                          },
+                          buttons: [
+                            {
+                              name: "date",
+                              location: "after",
+                              options: {
+                                stylingMode: "text",
+                                type: "default",
+                                icon: "event",
+                                elementAttr: {
+                                  id: "dateBtn",
+                                },
+                              },
+                            },
+                          ],
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تعیین تاریخ تولد الزامی است!",
+                          },
+                          {
+                            type: "pattern",
+                            pattern: "\[0-9]{4}/\[0-9]{1,2}/\[0-9]{1,2}",
+                            message: "ساختار تاریخ تولید وارد شده اشتباه است!",
+                          },
+                        ],                            
+                      },                                                                                                                                                                            
+                      {
+                        dataField: "profisency",
+                        editorType: "dxTextBox",
+                        editorOptions: {
+                          placeholder: "رشته تحصیلی متقاضی را وارد کنید",
+                          disabled: true
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تکمیل رشته تحصیلی متقاضی الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: "رشته تحصیلی متقاضی",
+                        },
+                      },
+                      {
+                        dataField: "university",
+                        editorType: "dxTextBox",
+                        editorOptions: {
+                          placeholder: "محل تحصیل متقاضی را وارد کنید",
+                          disabled: true
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تکمیل محل تحصیل متقاضی الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: "محل تحصیل متقاضی",
+                        },
+                      },      
+                      {
+                        dataField: "phone",
+                        editorType: "dxTextBox",
+                        editorOptions: {
+                          placeholder: "تلفن تماس متقاضی را وارد کنید",
+                          disabled: true
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تکمیل تلفن تماس متقاضی الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: "تلفن تماس متقاضی",
+                        },
+                      },
+                      {
+                        dataField: "email",
+                        editorType: "dxTextBox",
+                        editorOptions: {
+                          placeholder: "رایانامه متقاضی را وارد کنید",
+                          disabled: true
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تکمیل رایانامه متقاضی الزامی است!",
+                          },
+                        ],
+                        label: {
+                          text: "رایانامه متقاضی",
+                        },
+                      },                                                                                
+                    ]
+                  },
+                  {
+                    itemType: 'group',
+                    name: "startupGroup",
+                    cssClass: 'startupGroup hidden',
+                    colSpan: 2,   
+                    colCount: 2,
+                    items: [                     
+                      {
+                        dataField: "company",
+                        editorType: "dxTextBox",
+                        label: {
+                          text: "عنوان شرکت",
+                        },
+                        colSpan: 3,
+                        editorOptions: {
+                          disabled: true,
+                          placeholder: "عنوان شرکت خود را تعیین کنید",
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تعیین عنوان شرکت الزامی است!",
+                          },
+                        ],
+                      },     
+                      {
+                        dataField: "issueNumber",
+                        editorType: "dxTextBox",
+                        label: {
+                          text: "شماره ثبت",
+                        },
+                        colSpan: 3,
+                        editorOptions: {
+                          disabled: true,
+                          placeholder: "شماره ثبت شرکت را تعیین کنید",
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تعیین شماره ثبت الزامی است!",
+                          },
+                        ],
+                      },      
+                      {
+                        dataField: 'issueDate',
+                        editorType: 'dxTextBox',
+                        label: {
+                          text: 'تاریخ ثبت',
+                        },
+                        editorOptions: {
+                          disabled: true,
+                          placeholder: 'تاریخ ثبت را تعیین کنید',
+                          elementAttr: {
+                            id: "dateInput",
+                          },
+                          buttons: [
+                            {
+                              name: "date",
+                              location: "after",
+                              options: {
+                                stylingMode: "text",
+                                type: "default",
+                                icon: "event",
+                                elementAttr: {
+                                  id: "dateBtn2",
+                                },
+                              },
+                            },
+                          ],
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تعیین تاریخ ثبت الزامی است!",
+                          },
+                          {
+                            type: "pattern",
+                            pattern: "\[0-9]{4}/\[0-9]{1,2}/\[0-9]{1,2}",
+                            message: "ساختار تاریخ ثبت وارد شده اشتباه است!",
+                          },
+                        ],                            
+                      },                                    
+                      {
+                        dataField: "companyType",
+                        editorType: "dxSelectBox",
+                        label: {
+                          text: "نوع شرکت",
+                        },
+                        colSpan: 3,
+                        editorOptions: {
+                          valueExpr: "id",
+                          displayExpr: "title",
+                          dataSource: [
+                            {
+                              id: 1,
+                              title: "خصوصی"
+                            },
+                            {
+                              id: 2,
+                              title: "خصولتی"
+                            },
+                            {
+                              id: 3,
+                              title: "دولتی"
+                            },
+                            {
+                              id: 4,
+                              title: "شهامی خاص"
+                            },
+                            {
+                              id: 5,
+                              title: "سهامی عام"
+                            },
+                            {
+                              id: 6,
+                              title: "مسئولیت محدود"
+                            },     
+                            {
+                              id: 6,
+                              title: "تعاونی"
+                            },                                                      
+                          ],
+                          placeholder: "نوع شرکت را تعیین کنید",
+                          disabled: true
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تعیین نوع شرکت الزامی است!",
+                          },
+                        ],
+                      }, 
+                      {
+                        dataField: "identityId",
+                        editorType: "dxTextBox",
+                        label: {
+                          text: "شناسه ملی",
+                        },
+                        colSpan: 3,
+                        editorOptions: {
+                          disabled: true,
+                          placeholder: "نام شناسه ملی را تعیین کنید",
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تعیین شناسه ملی الزامی است!",
+                          },
+                        ],
+                      },                       
+                      {
+                        dataField: "CEOName",
+                        editorType: "dxTextBox",
+                        label: {
+                          text: "نام مدیر",
+                        },
+                        colSpan: 3,
+                        editorOptions: {
+                          disabled: true,
+                          placeholder: "نام مدیر را تعیین کنید",
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تعیین نام مدیر الزامی است!",
+                          },
+                        ],
+                      },                                                                                               
+                      {
+                        dataField: "address",
+                        editorType: "dxTextBox",
+                        label: {
+                          text: "محل فعالیت",
+                        },
+                        colSpan: 3,
+                        editorOptions: {
+                          disabled: true,
+                          placeholder: "محل فعالیت را تعیین کنید",
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تعیین محل فعالیت الزامی است!",
+                          },
+                        ],
+                      }, 
+                      {
+                        dataField: "assets",
+                        editorType: "dxTextBox",
+                        label: {
+                          text: "سرمایه اولیه",
+                        },
+                        colSpan: 3,
+                        editorOptions: {
+                          disabled: true,
+                          placeholder: "ارزش ریالی سرمایه اولیه را تعیین کنید",
+                        },
+                        validationRules: [
+                          {
+                            type: "required",
+                            message: "تعیین محل سرمایه اولیه الزامی است!",
+                          },
+                        ],
+                      },                       
+                                                                                                             
+                    ]
+                  }, 
+                  {
+                    colSpan: 1,
+                    itemType: "group",
+                    cssClass: "d-flex justify-content-center mx-auto pt-5",
+                    items: [
+                      {
+                        itemType: "button",
+                        name: "accept",
+                        buttonOptions: {
+                          disabled:true,
+                          text: "ثبت اطلاعات و رفتن به مرحله بعد",
+                          type: "success",
+                          useSubmitBehavior: true,
+                          width: "250",
+                        },
+                      },                           
+                    ],
+                  },                                                                                                                                                                                                                                                 
+                ]             
+            })
+            .dxForm("instance");
+
+        var date = $("#dateBtn").pDatepicker({
+          observer: true,
+          initialValue: false,
+          autoClose: true,
+          format: "YYYY/MM/DD",
+          altField: ".observer-example-alt",
+          viewMode: "year",
+          calendarType: "persian",
+          calendar: {
+            persian: {
+              locale: "fa",
+              showHint: true,
+              leapYearMode: "algorithmic",
+            },
+            gregorian: {
+              show: false,
+              locale: "fa",
+              showHint: false,
+            },
+          },
+          onSelect: function (e) {
+            const dd = date.getState().selected;
+            documentDataForm.deadline = `${dd.year}/${dd.month}/${dd.date}`;
+            form.updateData("startDate", documentDataForm.deadline);
+          },
+        });
+
+        $(window).resize(function() {
+                const width = $(window).width();
+                const layout = width < 576 ? "vertical" : "horizontal";
+                form.getEditor("startupTypes").option("layout",layout)
+            }).resize(); // Trigger resize to set initial layout        
+      });
+    </script>
+    <!-- javascript modules end -->
+  </body>
+</html>
