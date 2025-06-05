@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شتابدهنده آوانکست | تسریع رشد استارتاپ‌های فناوری</title>
+    
+    <!-- css Modules start -->
+    <link rel="stylesheet" href="assets/vendors/tailwind/tailwind.min.css" />
+    <link rel="stylesheet" href="assets/vendors/tailwind/all.min.css" />
+    <link rel="stylesheet" href="assets/vendors/tailwind/motion-tailwind.css" />
+    <!-- css Modules end -->
+
+    <!-- Layout styles start-->
+    <link rel="stylesheet" href="assets/css/dynamic-theme.css" />
+    <!-- layout styles End -->
+    <style>
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            top: 0;
+            left: 0;
+        }
+
+        .play-icon {
+            width: 0;
+            height: 0;
+            border-top: 24px solid transparent;
+            border-bottom: 24px solid transparent;
+            border-left: 40px solid #4f46e5;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+    </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-indigo-100 text-gray-800 relative">
+
+
+    <!-- Header -->
+    <header class="container mx-auto px-4 py-6 flex justify-between items-center lg:px-16 fixed" style="z-index: 10;" dir="ltr">
+        <div class="flex items-center">
+            <div id="playButton" class="play-icon  -mr-2"></div>
+            <div id="playButton" class="play-icon"></div>
+        </div>
+        <nav class="hidden md:block" dir="rtl">
+            <ul class="flex space-x-8 space-x-reverse">
+                <li><a href="#home" class="text-indigo-700 hover:text-indigo-900 font-medium" style="cursor: pointer;">صفحه اصلی</a></li>
+                <li><a href="#about" class="text-gray-700 hover:text-indigo-700 font-medium" style="cursor: pointer;">درباره ما</a></li>
+                <li><a href="#services" class="text-gray-700 hover:text-indigo-700 font-medium" style="cursor: pointer;">خدمات</a></li>
+                <li><a href="#portfolio" class="text-gray-700 hover:text-indigo-700 font-medium" style="cursor: pointer;">استارتاپ‌ها</a></li>
+                <li><a href="#contact" class="text-gray-700 hover:text-indigo-700 font-medium" style="cursor: pointer;">تماس با ما</a></li>
+            </ul>
+        </nav>
+        <button class="md:hidden text-indigo-700">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="container mx-auto px-4 flex flex-col xl:flex-row items-center min-h-screen lg:px-16 gap-6 bg-transparent relative">
+        <!-- Particle.js Background -->
+        <div id="particles-js"></div>
+
+        <div class="xl:w-1/2 mb-16 md:0 order-2 xl:order-1" style="z-index: 1;">
+            <h2 class="text-3xl md:text-4xl font-bold text-indigo-900 mb-6">شتابدهنده استارتاپ‌های <span class="text-blue-600">فناوری محور</span></h2>
+            <p class="text-lg text-gray-700 mb-8 leading-relaxed iranyekan">
+                آوانکست با ارائه خدمات تخصصی و زیرساخت‌های مورد نیاز، به استارتاپ‌های نوپا کمک می‌کند تا با سرعت بیشتری رشد کرده و به بازار هدف خود دست یابند.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg text-center font-medium transition duration-300">آغاز فرآیند شتابدهی</a>
+                <a href="#services" class="border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-50 px-6 py-3 rounded-lg text-center font-medium transition duration-300">خدمات ما</a>
+            </div>
+        </div>
+        <div class="xl:w-1/2 justify-center order-1 xl:order-2 mt-16" style="z-index: 1;">
+            <img src="assets/images/start.png" alt="شتابدهنده استارتاپ" class="w-full max-w-lg ">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-white py-16 lg:px-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-indigo-900 mb-4">در باره آوانکست</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="assets/images/startup2.png" alt="درباره آوانکست" class="w-full">
+                </div>
+                <div class="md:w-1/2 md:pr-10">
+                    <h3 class="text-2xl font-bold text-indigo-800 mb-6">تسریع رشد کسب‌وکارهای نوپا</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        شتابدهنده آوانکست با بهره‌گیری از تجربه‌ی تیم متخصص خود و شبکه‌ی گسترده‌ی مربیان و سرمایه‌گذاران، بستری ایده‌آل برای رشد استارتاپ‌های فناورانه فراهم می‌کند.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <div class="bg-blue-100 p-2 rounded-full ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <span class="text-gray-700 leading-8">مشاوره تخصصی در حوزه فناوری و کسب‌وکار</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-blue-100 p-2 rounded-full ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <span class="text-gray-700 leading-8">دسترسی به شبکه سرمایه‌گذاران و مربیان باتجربه</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-blue-100 p-2 rounded-full ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <span class="text-gray-700 leading-8">فضای کار اشتراکی و آزمایشگاهی مجهز</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300">اطلاعات بیشتر</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-indigo-50 lg:px-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-indigo-900 mb-4">خدمات ما</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl transition duration-300">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-indigo-800 mb-4">برنامه شتابدهی</h3>
+                    <p class="text-gray-700">برنامه‌ای فشرده و ساختارمند برای رشد سریع استارتاپ‌ها با ارائه آموزش‌های تخصصی، منتورینگ و شبکه‌سازی.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl transition duration-300">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-indigo-800 mb-4">جذب سرمایه</h3>
+                    <p class="text-gray-700">ارتباط با سرمایه‌گذاران خطرپذیر و فرشتگان کسب‌وکار برای تأمین مالی استارتاپ‌های مستعد.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl transition duration-300">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-indigo-800 mb-4">فضای کار اشتراکی</h3>
+                    <p class="text-gray-700">محیطی پویا و الهام‌بخش برای کار تیمی با امکانات کامل اداری و آزمایشگاهی.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl transition duration-300">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-indigo-800 mb-4">امنیت سایبری</h3>
+                    <p class="text-gray-700">ارائه راهکارهای امنیتی برای محافظت از دارایی‌های دیجیتال استارتاپ‌ها.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl transition duration-300">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-indigo-800 mb-4">راهکارهای ابری</h3>
+                    <p class="text-gray-700">استقرار و مدیریت زیرساخت‌های ابری برای مقیاس‌پذیری استارتاپ‌ها.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl transition duration-300">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-indigo-800 mb-4">رویدادهای شبکه‌سازی</h3>
+                    <p class="text-gray-700">برگزاری رویدادهای تخصصی برای ارتباط با متخصصان، مشتریان و سرمایه‌گذاران.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 bg-white lg:px-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-indigo-900 mb-4">استارتاپ‌های ما</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="rounded-xl overflow-hidden border-2 transition duration-300">
+                    <img src="https://cdn.pixabay.com/photo/2015/05/31/10/55/man-791049_1280.jpg" alt="استارتاپ فناوری" class="w-full h-48 object-cover">
+                    <div class="p-6 bg-white">
+                        <h3 class="text-xl font-bold text-indigo-800 mb-2">هوش مصنوعی پزشکی</h3>
+                        <p class="text-gray-700 mb-4">پلتفرم تشخیص بیماری‌ها با استفاده از هوش مصنوعی</p>
+                        <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">فناوری سلامت</span>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden border-2 transition duration-300">
+                    <img src="https://cdn.pixabay.com/photo/2017/05/10/19/29/robot-2301646_1280.jpg" alt="استارتاپ رباتیک" class="w-full h-48 object-cover">
+                    <div class="p-6 bg-white">
+                        <h3 class="text-xl font-bold text-indigo-800 mb-2">ربات‌های خدماتی</h3>
+                        <p class="text-gray-700 mb-4">ربات‌های هوشمند برای خدمات صنعتی و خانگی</p>
+                        <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">رباتیک</span>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden border-2 transition duration-300">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/08/41/apple-1868496_1280.jpg" alt="استارتاپ کشاورزی" class="w-full h-48 object-cover">
+                    <div class="p-6 bg-white">
+                        <h3 class="text-xl font-bold text-indigo-800 mb-2">کشاورزی هوشمند</h3>
+                        <p class="text-gray-700 mb-4">راهکارهای IoT برای بهینه‌سازی مصرف آب در کشاورزی</p>
+                        <span class="inline-block bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">کشاورزی فناورانه</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white px-6 py-3 rounded-lg font-medium transition duration-300">مشاهده همه استارتاپ‌ها</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-indigo-50 text-indigo-700 lg:px-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">تماس با ما</h2>
+                <div class="w-20 h-1 bg-blue-400 mx-auto"></div>
+            </div>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h3 class="text-2xl font-bold mb-6">فرم درخواست همکاری</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block mb-2 font-medium">نام و نام خانوادگی</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-indigo-700 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 font-medium">ایمیل</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-indigo-700 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        </div>
+                        <div>
+                            <label for="phone" class="block mb-2 font-medium">شماره تماس</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-indigo-700 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-2 font-medium">پیام شما</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-indigo-700 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300">ارسال درخواست</button>
+                    </form>
+                </div>
+                <div class="md:w-1/2 md:pr-10">
+                    <h3 class="text-2xl font-bold mb-6">اطلاعات تماس</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-indigo-700 p-3 rounded-full ml-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#fff">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">آدرس</h4>
+                                <p class="text-indigo-900">تهران، خیابان آزادی، دانشگاه تهران، مرکز رشد واحدهای فناور</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-indigo-700 p-3 rounded-full ml-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#fff">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">تلفن</h4>
+                                <p class="text-indigo-900">021-12345678</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-indigo-700 p-3 rounded-full ml-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#fff">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">ایمیل</h4>
+                                <p class="text-indigo-900">info@avanx.ir</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <h4 class="font-bold text-lg mb-4">ما را در شبکه‌های اجتماعی دنبال کنید</h4>
+                        <div class="flex space-x-4 space-x-reverse">
+                            <a href="#" class="bg-indigo-700 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff" class="w-5 h-5">
+                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="bg-indigo-700 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff" class="w-5 h-5">
+                                    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="bg-indigo-700 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff" class="w-5 h-5">
+                                    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="bg-indigo-700 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff" class="w-5 h-5">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="bg-indigo-700 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff" class="w-5 h-5">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-indigo-600 py-8 lg:px-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center">
+                        <div id="playButton" class="play-icon  -mr-2"></div>
+                        <div id="playButton" class="play-icon"></div>                        
+                        <h1 class="mr-3 text-2xl font-light text-white yekanbakh">آوانکست</h1>
+                    </div>
+                    <p class="mt-4 text-indigo-300">شتابدهنده استارتاپ‌های فناوری محور</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p>© ۲۰۲۳ شتابدهنده آوانکست. تمام حقوق محفوظ است.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-indigo-300 hover:text-white ml-4">حریم خصوصی</a>
+                        <a href="#" class="text-indigo-300 hover:text-white ml-4">قوانین و مقررات</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/vendors/particles/particles.min.js"></script>
+    <script src="assets/vendors/tailwind/tailwind.min.js"></script>
+    <script>
+        // Initialize Particle.js
+        document.addEventListener('DOMContentLoaded', function() {
+            particlesJS('particles-js', {
+                "particles": {
+                    "number": {
+                        "value": 100,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#4f46e5"
+                    },
+                    "shape": {
+                        "type": "polygon",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 4,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#6366f1",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 2,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": false,
+                            "mode": "grab"
+                        },
+                        "onclick": {
+                            "enable": false,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 140,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+        });
+    </script>
+</body>
+</html>

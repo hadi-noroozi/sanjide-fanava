@@ -26,71 +26,159 @@
     <link rel="stylesheet" href="assets/css/dynamic-theme.css" />
     <!-- layout styles End -->
   </head>
-  <body
-    class="overflow-x-hidden h-screen m-0 p-0 dx-viewport iranyekan"
-  >
-    <div id="root" class="bg-indigo-50 h-full ">
-      <div class="container flex flex-col mx-auto rounded-lg py-5">
+  <body class="overflow-x-hidden h-screen m-0 p-0 dx-viewport iranyekan">
+    <div id="root" class="bg-blue-50 text-blue-900">
+
+      <div
+        class="container mx-auto flex flex-col items-start lg:flex-row"
+      >
         <div
-          class="flex justify-center w-full h-full my-auto xl:gap-14 lg:justify-normal md:gap-5 draggable"
+          class="flex flex-col w-full lg:sticky lg:top-12 lg:w-1/3 mt-12 md:mt-12 px-3"
         >
-          <div class="flex items-center xl:p-10 md:pt-24 ">
-            <form
-              autocomplete="off"
-              action="ideas/add-ideas/verify.html"
-              method="get"
-              class="flex flex-col w-full h-full pb-6 text-center rounded-3xl"
-            >
-              <img src="../../assets/images/bg/vector.png" class="xl:w-64 md:w-1/2 w-48 mx-auto" alt="">
-              <h2 class="my-3 text-4xl font-extrabold text-indigo-800 yekanbakh ">
-                ثبت ایده/استارت آپ سنجیده
-              </h2>
+          <img src="../../assets/images/bg/vector.png" class="w-56 mb-12 mx-auto" alt="">
+          <p class="ml-2 text-blue-600 uppercase tracking-loose">
+            شرح فرآیند مرحله به مرحله ثبت ایده، استارت آپ و ارزیابی آنها
+          </p>
+          <p
+            class="text-2xl md:text-3xl leading-normal md:leading-relaxed mb-2 yekanbakh font-extrabold"
+          >
+          قدم به قدم در سنجیده
+          </p>
+          <p class="text-sm md:text-base text-dark mb-6">
+            در هر مرحله برای تیم ها در سنجیده چه اتفاقی می‌افتد؟
+          </p>
+          <a
+            href="#"
+            class="bg-transparent text-lg mr-auto hover:bg-blue-900 text-blue-700 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-blue-300 hover:border-transparent"
+          >
+            همین الان ثبت نام کنید!
+          </a
+          >
+        </div>
+        <div class="ml-0 lg:ml-12 lg:w-2/3 sticky">
+          <div class="container mx-auto w-full h-full px-0 lg:px-6">
+            <div class="relative wrap overflow-hidden py-10 h-full">
+              <div
+                class="border-2 border-blue-500 absolute h-full lg:hidden block"
+                style="
+                  left: 99%;
+                  border: 2px solid #1E3a8A;
+                  border-radius: 1%;
+                "
+              ></div>
+              <div
+                class="border-2 border-blue-500 absolute h-full lg:block hidden"
+                style="
+                  right: 50%;
+                  border: 2px solid #1E3a8A;
+                  border-radius: 1%;
+                "
+              ></div>
+              <div
+                class="border-2 border-blue-300 absolute h-full lg:block hidden"
+                style="
+                  left: 50%;
+                  border: 2px solid #1E3a8A;
+                  border-radius: 1%;
+                "
+              ></div>
 
-              <div class="md:w-7/8 w-full mx-auto">
-                <p class="mb-6 text-indigo-800 leading-7 text-start">
-                  برای شروع فرآیند ثبت ایده یا استارت آپ خود، شماره موبایل همراه
-                  خود را وارد نمایید.
-                </p>                
-                <input
-                  id="tel"
-                  type="tel"
-                  name="phone"
-                  pattern="09[0-9]{9}"
-                  inputmode="numeric"
-                  required
-                  placeholder="شماره موبایل همراه خود را وارد کنید"
-                  class="flex items-center w-full px-5 py-4 text-sm font-medium outline-none focus:shadow-xs focus:shadow-indigo-700 mb-3 placeholder:text-grey-700 bg-white text-dark-grey-900 rounded-2xl"
-                />
-
-                <button
-                  class="w-full px-6 py-5 mb-5 text-sm font-bold leading-none text-white transition duration-300 rounded-2xl hover:bg-indigo-600 focus:ring-4 focus:ring-purple-blue-100 bg-indigo-500"
-                >
-                  ارسال کد تایید
-                </button>
+              <div
+                class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline mr-3 lg:mr-0"
+              >
+                <div class="order-1 lg:w-5/12"></div>
+                <div class="order-1 lg:w-5/12 py-4 text-right">
+                  <p class="text-base text-blue-500 yekanbakh">
+                    قدم اول
+                  </p>
+                  <h4 class="mb-3 font-bold text-lg md:text-2xl">
+                    ثبت نام اولیه
+                  </h4>
+                  <p
+                    class="text-sm md:text-base leading-snug text-opacity-100"
+                  >
+                  در این مرحله جزئیات نسخه ی اولیه ی ایده یا استارت آپ خود را برای ما ارسال می‌کنید تا مورد سنجش قرار گیرد.
+                  </p>
+                </div>
               </div>
-            </form>
+              <div
+                class="mb-8 flex justify-between items-center w-full right-timeline mr-3 lg:mr-0"
+              >
+                <div class="order-1 lg:w-5/12"></div>
+                <div class="order-1 lg:w-5/12 px-1 py-4 lg:text-left">
+                  <p class="text-base text-blue-500 yekanbakh">
+                    قدم دوم
+                  </p>
+                  <h4 class="mb-3 font-bold text-lg md:text-2xl">
+                    ثبت حقوقی اطلاعات ایده و استارت آپ
+                  </h4>
+                  <p
+                    class="text-sm md:text-base leading-snug  text-opacity-100"
+                  >
+                  ایده‌ی ارسال شده به صورت حقوقی به اسم صاحبان ایده ثبت می گردد تا در آینده امکان کپی و سوء استفاده از آن وجود نداشته باشد.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline mr-3 lg:mr-0"
+              >
+                <div class="order-1 lg:w-5/12"></div>
+                <div class="order-1 lg:w-5/12 px-1 py-4 text-right">
+                  <p class="text-base text-blue-500 yekanbakh">قدم سوم</p>
+                  <h4 class="mb-3 font-bold text-lg md:text-2xl">
+                    ارزیابی و پذیرش
+                  </h4>
+                  <p
+                    class="text-sm md:text-base leading-snug  text-opacity-100"
+                  >
+                  پس از ارزیابی های اولیه و سنجش ایده، مصاحبه‌ای با تیم صاحبان ایده انجام می‌گیرد که در آن، شرایط تیم و شتابدهی امکان سنجی می‌شود.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="mb-8 flex justify-between items-center w-full right-timeline mr-3 lg:mr-0"
+              >
+                <div class="order-1 lg:w-5/12"></div>
+
+                <div class="order-1 lg:w-5/12 px-1 py-4 lg:text-left">
+                  <p class="text-base text-blue-500 yekanbakh">قدم چهارم</p>
+                  <h4 class="mb-3 font-bold text-lg md:text-2xl">
+                    شتابدهی و پیش شتابدهی
+                  </h4>
+                  <p
+                    class="text-sm md:text-base leading-snug  text-opacity-100"
+                  >
+                  تیم ها پس از پذیرش و استقرار، به منظور آماده سازی محصول اولیه و مهیا شدن برای جذب سرمایه به مدت سه ماه در دوره‌ی پیش شتابدهی قرار می‌گیرند.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <img
+              class="ml-auto mb-24 lg:w-1/2 w-full lg:-mt-36"
+              src="../../assets/images/startup-vector.png"
+            />
           </div>
         </div>
       </div>
 
+
       <!-- Start footer block -->
-      <footer
-        class=" fixed bottom-0 w-screen"
-        id="footer"
-      >
+      <footer class="fixed bottom-0 w-screen bg-blue-50" id="footer">
         <div class="mx-auto w-full max-w-screen-xl p-4 ">
-          <hr class="border-indigo-600 sm:mx-auto dark:border-gray-700 mb-6 opacity-25" />
+          <hr
+            class="border-blue-400 sm:mx-auto dark:border-gray-700 mb-6 opacity-25"
+          />
           <div class="sm:flex sm:items-center sm:justify-between" dir="ltr">
             <span
-              class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+              class="text-sm 0 sm:text-center dark:text-gray-400"
               >© 2024
-              <a href="" class="text-indigo-600 hover:underline">Sanjide</a
-              >. All Rights Reserved.
+              <a href="" class="text-rose-400 hover:underline">Sanjide</a>. All
+              Rights Reserved.
             </span>
             <div class="flex mt-4 sm:justify-center sm:mt-0 gap-x-4">
               <a
                 href="#"
-                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                class="0 hover:text-gray-900 dark:hover:text-white"
               >
                 <img
                   src="assets/images/icons/whatsapp.png"
@@ -101,7 +189,7 @@
               </a>
               <a
                 href="#"
-                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                class="0 hover:text-gray-900 dark:hover:text-white"
               >
                 <img
                   src="assets/images/icons/telegram.png"
@@ -112,7 +200,7 @@
               </a>
               <a
                 href="#"
-                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                class="0 hover:text-gray-900 dark:hover:text-white"
               >
                 <img
                   src="assets/images/icons/envelope.png"
@@ -123,7 +211,7 @@
               </a>
               <a
                 href="#"
-                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                class="0 hover:text-gray-900 dark:hover:text-white"
               >
                 <img
                   src="assets/images/icons/telephone.png"
